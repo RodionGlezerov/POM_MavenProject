@@ -10,8 +10,8 @@ public class LoginPageTests extends  TestBase{
 
     @Test
     public void loginPositiveTest(){
-        new HomePage(driver).clickStore();
-        new SidePanelPage(driver).loginButtonSidePanel();
+//        new HomePage(driver).clickStore();
+//        new SidePanelPage(driver).loginButtonSidePanel();
         new LoginPage(driver).login("Tom","!Tom1234");
         new ProfilePage(driver).verifyUserName("Tom").logout();
     }

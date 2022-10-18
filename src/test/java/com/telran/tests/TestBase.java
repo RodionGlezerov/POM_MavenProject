@@ -1,5 +1,7 @@
 package com.telran.tests;
 
+import com.telran.pages.HomePage;
+import com.telran.pages.SidePanelPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +19,8 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.get("https://demoqa.com");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        new HomePage(driver).clickStore();
+        new SidePanelPage(driver).loginButtonSidePanel();
     }
 
     @AfterMethod (enabled = false)
