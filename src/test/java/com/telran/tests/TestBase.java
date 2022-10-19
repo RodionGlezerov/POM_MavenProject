@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    WebDriver driver;
+   public WebDriver driver;
 
     @BeforeMethod
     public void init(){
@@ -19,8 +19,6 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.get("https://demoqa.com");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        new HomePage(driver).clickStore();
-        new SidePanelPage(driver).loginButtonSidePanel();
     }
 
     @AfterMethod (enabled = false)

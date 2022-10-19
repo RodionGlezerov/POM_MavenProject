@@ -20,5 +20,11 @@ public class HomePage extends PageBase{
         pause(2000);
         new HomePage(driver);
     }
+    @FindBy(xpath = "//div[.='Alerts, Frame & Windows']")
+    WebElement alertsFrameWindows;
 
+    public SidePanelPage getAlertsFrameWindows() {
+        clickWithJSExecutor(alertsFrameWindows,0,300);
+        return new SidePanelPage(driver);
+    }
 }

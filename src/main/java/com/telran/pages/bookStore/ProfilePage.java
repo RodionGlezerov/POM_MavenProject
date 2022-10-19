@@ -1,10 +1,11 @@
-package com.telran.pages;
+package com.telran.pages.bookStore;
 
+import com.telran.pages.PageBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.security.AuthProvider;
+import java.util.List;
 
 public class ProfilePage extends PageBase {
 
@@ -31,5 +32,21 @@ public class ProfilePage extends PageBase {
     public LoginPage logout(){
         click(logoutButton);
         return  new LoginPage(driver);
+    }
+
+    @FindBy(id = "delete-record-undefined")
+    List<WebElement> bookList;
+
+    @FindBy(id = "closeSmallModal-ok")
+    WebElement okButton;
+
+    public ProfilePage deleteBook() {
+        pause(2000);
+        bookList.get(0).click();
+        pause(2000);
+        click(okButton);
+        pause(2000);
+        driver.switchTo().alert().accept();
+        return this;
     }
 }
