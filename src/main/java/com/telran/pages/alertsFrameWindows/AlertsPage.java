@@ -29,6 +29,19 @@ public class AlertsPage extends PageBase {
 
     }
 
+    @FindBy(id = "alertButton")
+    WebElement alertButton;
+
+    public AlertsPage clickButtonToSeeAlert(){
+        click(alertButton);
+        pause(2000);
+        System.out.println(driver.switchTo().alert().getText());
+        pause(2000);
+        driver.switchTo().alert().accept();
+        return this;
+    }
+
+
     @FindBy(id = "confirmButton")
     WebElement confirmButton;
 
@@ -56,7 +69,7 @@ public class AlertsPage extends PageBase {
     public AlertsPage clickMessageAlertButton(String message) {
         clickWithJSExecutor(promtButton,0,100);
         if (message != null){
-            driver.switchTo().alert().sendKeys(message); // ?
+            driver.switchTo().alert().sendKeys(message);
         }
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();

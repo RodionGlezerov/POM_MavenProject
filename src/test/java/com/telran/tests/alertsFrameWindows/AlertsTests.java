@@ -16,6 +16,7 @@ public class AlertsTests extends TestBase {
         new SidePanelPage(driver).selectAlerts();
     }
 
+
     @Test
     public void waitOfAlertTest(){
         new AlertsPage(driver).clickOnTimerAlertButton();
@@ -31,5 +32,10 @@ public class AlertsTests extends TestBase {
     public void sendTextInAlertTest(){
         new AlertsPage(driver).clickMessageAlertButton("Hello world");
         Assert.assertTrue(new AlertsPage(driver).getConfirmMessageResult().contains("Hello"));
+    }
+
+    @Test
+    public void getAlertText(){
+        new AlertsPage(driver).clickButtonToSeeAlert();
     }
 }
