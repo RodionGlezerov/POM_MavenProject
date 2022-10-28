@@ -7,11 +7,15 @@ import com.telran.pages.alertsFrameWindows.WindowsPage;
 import com.telran.pages.bookStore.BookStorePage;
 import com.telran.pages.bookStore.ProfilePage;
 import com.telran.pages.elements.ButtonsPage;
+import com.telran.pages.elements.TextBoxPage;
+import com.telran.pages.interactions.DragAndDropPage;
+import com.telran.pages.widgets.MenuPage;
+import com.telran.pages.widgets.SelectMenuPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SidePanelPage extends PageBase{
+public class SidePanelPage extends PageBase {
 
     public SidePanelPage(WebDriver driver) {
         super(driver);
@@ -20,23 +24,25 @@ public class SidePanelPage extends PageBase{
     @FindBy(xpath = "//*[contains(text(),'Login')]")
     WebElement loginSidePanel;
 
-    public SidePanelPage loginButtonSidePanel(){
+    public SidePanelPage loginButtonSidePanel() {
         pause(2000);
-        clickWithJSExecutor(loginSidePanel,0,500);
+        clickWithJSExecutor(loginSidePanel, 0, 500);
         return this;
     }
+
     @FindBy(xpath = "//span[.='Alerts']")
     WebElement alerts;
 
     public AlertsPage selectAlerts() {
-        clickWithJSExecutor(alerts,0,300);
+        clickWithJSExecutor(alerts, 0, 300);
         return new AlertsPage(driver);
     }
+
     @FindBy(xpath = "//span[.='Book Store']")
     WebElement bookStore;
 
     public BookStorePage selectBookStore() {
-        clickWithJSExecutor(bookStore,0,500);
+        clickWithJSExecutor(bookStore, 0, 500);
         return new BookStorePage(driver);
     }
 
@@ -44,15 +50,16 @@ public class SidePanelPage extends PageBase{
     WebElement profile;
 
     public ProfilePage selectProfile() {
-        clickWithJSExecutor(profile,0,500);
+        clickWithJSExecutor(profile, 0, 500);
         return new ProfilePage(driver);
 
     }
+
     @FindBy(css = ".show #item-0")
     WebElement windows;
 
     public WindowsPage selectWindows() {
-        clickWithJSExecutor(windows,0,200);
+        clickWithJSExecutor(windows, 0, 200);
         return new WindowsPage(driver);
     }
 
@@ -60,7 +67,7 @@ public class SidePanelPage extends PageBase{
     WebElement frames;
 
     public FramesPage selectFrames() {
-        clickWithJSExecutor(frames,0,200);
+        clickWithJSExecutor(frames, 0, 200);
         return new FramesPage(driver);
     }
 
@@ -68,15 +75,47 @@ public class SidePanelPage extends PageBase{
     WebElement nestedFrames;
 
     public NestedFramesPage selectNestedFrames() {
-        clickWithJSExecutor(nestedFrames,0,300);
-        return  new NestedFramesPage(driver);
+        clickWithJSExecutor(nestedFrames, 0, 300);
+        return new NestedFramesPage(driver);
     }
 
     @FindBy(xpath = "//span[.='Buttons']")
     WebElement buttons;
 
     public ButtonsPage selectButtons() {
-        clickWithJSExecutor(buttons,0,500);
+        clickWithJSExecutor(buttons, 0, 500);
         return new ButtonsPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Select Menu']")
+    WebElement selectmenu;
+
+    public SelectMenuPage getSelectManu() {
+        clickWithJSExecutor(selectmenu, 0, 500);
+        return new SelectMenuPage(driver);
+
+    }
+
+    @FindBy(xpath = "//span[.='Droppable']")
+    WebElement droppable;
+
+    public DragAndDropPage selectDroppable() {
+        clickWithJSExecutor(droppable, 0, 500);
+        return new DragAndDropPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Text Box']")
+    WebElement textBox;
+    public TextBoxPage selectTextBox() {
+        click(textBox);
+        return new TextBoxPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Menu']")
+    WebElement menu;
+
+    public MenuPage getMenu() {
+        clickWithJSExecutor(menu,0,500);
+        return new MenuPage(driver);
     }
 }
