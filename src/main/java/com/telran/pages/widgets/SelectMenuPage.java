@@ -5,12 +5,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import static java.lang.String.format;
-import static org.openqa.selenium.By.name;
 import static org.openqa.selenium.By.xpath;
 
 public class SelectMenuPage extends PageBase {
@@ -41,7 +38,7 @@ public class SelectMenuPage extends PageBase {
     WebElement space;
 
     public SelectMenuPage multiSelectDropDown(String text) {
-        clickWithJSExecutor(multiSelectDropDown,0,300);
+        clickWithJSExecutor(multiSelectDropDown, 0,300);
         WebElement element = driver.findElement(xpath(format("//div[text()='%s']", text)));
         //int - %d
         click(element);
@@ -125,4 +122,11 @@ public class SelectMenuPage extends PageBase {
 
     }
 
+    public SelectMenuPage selectOne_1(Integer number) {
+        click(selectOne);
+        List<WebElement> selected = driver.findElements(By.xpath("//div[text()='%d']"));
+
+        selected.get(number).click();
+        return this;
+    }
 }

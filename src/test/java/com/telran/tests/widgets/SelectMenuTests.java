@@ -42,5 +42,12 @@ public class SelectMenuTests extends TestBase {
 
     }
 
+    @Test
+    public void selectOne_1(){
+        new SelectMenuPage(driver).selectOne_1(3);
+    }
+
+
+
 
 }

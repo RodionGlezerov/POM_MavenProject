@@ -8,8 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Collection;
-
 public class AlertsPage extends PageBase {
     public AlertsPage(WebDriver driver) {
         super(driver);
@@ -46,7 +44,7 @@ public class AlertsPage extends PageBase {
     WebElement confirmButton;
 
     public AlertsPage clickOnConfirmButton(String text) {
-        clickWithJSExecutor(confirmButton,0,100);
+        clickWithJSExecutor(confirmButton, 0,100);
         if (text != null && text.equals("OK")) {
             driver.switchTo().alert().accept();
         } else if (text != null & text.equals("Cancel")) {
@@ -67,7 +65,7 @@ public class AlertsPage extends PageBase {
     WebElement promtButton;
 
     public AlertsPage clickMessageAlertButton(String message) {
-        clickWithJSExecutor(promtButton,0,100);
+        clickWithJSExecutor(promtButton, 0,100);
         if (message != null){
             driver.switchTo().alert().sendKeys(message);
         }

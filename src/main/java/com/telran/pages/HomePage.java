@@ -16,7 +16,7 @@ public class HomePage extends PageBase{
 
     public void clickStore(){
         pause(2000);
-        clickWithJSExecutor(bookStoreApp,149,662);
+        clickWithJSExecutor(bookStoreApp, 149,662);
         pause(2000);
         new HomePage(driver);
     }
@@ -24,7 +24,7 @@ public class HomePage extends PageBase{
     WebElement alertsFrameWindows;
 
     public SidePanelPage getAlertsFrameWindows() {
-        clickWithJSExecutor(alertsFrameWindows,0,300);
+        clickWithJSExecutor(alertsFrameWindows, 0,300);
         return new SidePanelPage(driver);
     }
 
@@ -32,21 +32,29 @@ public class HomePage extends PageBase{
     WebElement elements;
 
     public SidePanelPage getElements() {
-        clickWithJSExecutor(elements,0,300);
+        clickWithJSExecutor(elements, 0,300);
         return new SidePanelPage(driver);
     }
     @FindBy(xpath = "//div[.='Widgets']")
     WebElement widgets;
 
     public SidePanelPage getWidgets() {
-        clickWithJSExecutor(widgets,0,300);
+        clickWithJSExecutor(widgets, 0,300);
         return new SidePanelPage(driver);
     }
 
     @FindBy(xpath = "//div[.='Interactions']")
     WebElement interactions;
     public SidePanelPage getIneractions() {
-        clickWithJSExecutor(interactions,0,300);
+        clickWithJSExecutor(interactions, 0,300);
+        return new SidePanelPage(driver);
+    }
+
+    @FindBy(xpath = "//div[@class='category-cards']/div[2]")
+    WebElement forms;
+
+    public SidePanelPage getForms() {
+        clickWithJSExecutor(forms, 0,300);
         return new SidePanelPage(driver);
     }
 }

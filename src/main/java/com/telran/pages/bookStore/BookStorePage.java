@@ -46,7 +46,7 @@ public class BookStorePage extends PageBase {
     WebElement addToCollectionButton;
 
     public BookStorePage addToYourCollection() {
-        clickWithJSExecutor(addToCollectionButton,0,300);
+        clickWithJSExecutor(addToCollectionButton, 0,300);
         pause(2000);
         driver.switchTo().alert().accept();
         return this;
