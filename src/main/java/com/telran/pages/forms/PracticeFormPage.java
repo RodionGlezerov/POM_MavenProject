@@ -175,7 +175,7 @@ public class PracticeFormPage extends PageBase {
 
 
     public PracticeFormPage inputState(String state) {
-        click(stateContainer);
+        clickWithJSExecutor(stateContainer,0,300);
         stateInput.sendKeys(state);
         stateInput.sendKeys(Keys.ENTER);
         return this;
@@ -229,8 +229,16 @@ public class PracticeFormPage extends PageBase {
        type(userEmail,user.getEmail());
        type(userNumber,user.getPhone());
     }
-    public void setDateDataProvider(String date) {
 
+
+    public void enterPersonalDataWithDataProviderWithCSV(User user) {
+        type(firstName,user.getName());
+        type(lastName,user.getLastname());
+        type(userEmail,user.getEmail());
+        type(userNumber,user.getPhone());
+        typeOfDate(user.getDate());
+        uploadFile(user.getPath());
+        type(currentAddress,user.getAddress());
     }
 
 

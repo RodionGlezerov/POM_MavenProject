@@ -73,6 +73,20 @@ public class PracticeFormTests extends TestBase {
         Assert.assertTrue(new PracticeFormPage(driver).getTitleOfDialog().contains("Thanks for"));
     }
 
+@Test(dataProvider = "newRegistrationWithCSV",dataProviderClass = DataProviders.class)
+    public void fillStudentRegistrationFormTestWithDataProviderWithCSV(User user) {
+        new PracticeFormPage(driver).hideIframes().enterPersonalDataWithDataProviderWithCSV(user);
+        new PracticeFormPage(driver)
+                .selectGender(StudentData.GENDER)
+                .addSubject(StudentData.SUBJECTS)
+                .chooseHobbies(StudentData.HOBBIES);
+        new PracticeFormPage(driver)
+                .inputState(StudentData.STATE)
+                .inputCity(StudentData.CITY)
+                .submit();
+        Assert.assertTrue(new PracticeFormPage(driver).getTitleOfDialog().contains("Thanks for"));
+    }
+
 
 
 }
