@@ -8,6 +8,7 @@ import com.telran.pages.bookStore.BookStorePage;
 import com.telran.pages.bookStore.ProfilePage;
 import com.telran.pages.elements.BrokenLinksImagesPage;
 import com.telran.pages.elements.ButtonsPage;
+import com.telran.pages.elements.LinksPage;
 import com.telran.pages.elements.TextBoxPage;
 import com.telran.pages.forms.PracticeFormPage;
 import com.telran.pages.interactions.DragAndDropPage;
@@ -143,5 +144,13 @@ public class SidePanelPage extends PageBase {
     public ToolTipsPage selectToolTips() {
         clickWithJSExecutor(toolTips,0,500);
         return new ToolTipsPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Links']")
+    WebElement links;
+
+    public LinksPage selectLinks() {
+        clickWithJSExecutor(links,0,400);
+        return new LinksPage(driver);
     }
 }
