@@ -6,12 +6,14 @@ import com.telran.pages.alertsFrameWindows.NestedFramesPage;
 import com.telran.pages.alertsFrameWindows.WindowsPage;
 import com.telran.pages.bookStore.BookStorePage;
 import com.telran.pages.bookStore.ProfilePage;
+import com.telran.pages.elements.BrokenLinksImagesPage;
 import com.telran.pages.elements.ButtonsPage;
 import com.telran.pages.elements.TextBoxPage;
 import com.telran.pages.forms.PracticeFormPage;
 import com.telran.pages.interactions.DragAndDropPage;
 import com.telran.pages.widgets.MenuPage;
 import com.telran.pages.widgets.SelectMenuPage;
+import com.telran.pages.widgets.ToolTipsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -125,5 +127,21 @@ public class SidePanelPage extends PageBase {
     public PracticeFormPage selectPracticeForm() {
         click(practiceForm);
         return new PracticeFormPage(driver);
+    }
+    @FindBy(xpath = "//span[.='Broken Links - Images']")
+    WebElement brokenLinksImages;
+
+    public BrokenLinksImagesPage selectBrokenLinksImages() {
+        clickWithJSExecutor(brokenLinksImages,0,400);
+        return new BrokenLinksImagesPage(driver);
+    }
+
+
+    @FindBy(xpath = "//span[.='Tool Tips']")
+    WebElement toolTips;
+
+    public ToolTipsPage selectToolTips() {
+        clickWithJSExecutor(toolTips,0,500);
+        return new ToolTipsPage(driver);
     }
 }

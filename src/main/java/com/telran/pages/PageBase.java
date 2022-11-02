@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class PageBase {
 
@@ -89,5 +91,21 @@ public class PageBase {
         actions.moveToElement(element).perform();
         actions.moveByOffset(-offSetX, -offSetY).click().perform();
 
+    }
+
+    protected void verifyLinks(String linkUrl) {
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setConnectTimeout(5000);
+            httpURLConnection.connect();
+            if (httpURLConnection.getResponseCode() >= 400) {
+                System.out.println(linkUrl + " - " + httpURLConnection.getResponseMessage() + "is a broken link");
+            } else {
+                System.out.println(linkUrl + " - " + httpURLConnection.getResponseMessage());
+            }
+        } catch (Exception e){
+            System.out.println(linkUrl + " - " + e.getMessage() + " - is a broken link" );
+        }
     }
 }
