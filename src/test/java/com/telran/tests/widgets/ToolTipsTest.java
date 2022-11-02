@@ -6,9 +6,6 @@ import com.telran.pages.widgets.ToolTipsPage;
 import com.telran.tests.TestBase;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.TestInstance;
-
-import java.util.logging.Handler;
 
 public class ToolTipsTest extends TestBase {
 
@@ -20,6 +17,12 @@ public class ToolTipsTest extends TestBase {
 
     @Test
     public void hoverTooTipWithAttribute(){
-        new ToolTipsPage(driver).hoverTooTipWithAttribute();
+        new ToolTipsPage(driver).hoverToolTipWithAttribute();
+    }
+
+    @Test
+    public void hoverTooTipContraryWithAttribute(){
+        new ToolTipsPage(driver).hoverToolTipContraryWithAttribute();
+
     }
 }
