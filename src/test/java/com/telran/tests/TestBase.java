@@ -36,7 +36,7 @@ public class TestBase {
 
     }
 
-    @AfterMethod (enabled = false)
+    @AfterMethod (enabled = true)
     public void  tearDown(){
         driver.quit();
     }
