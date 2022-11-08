@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="11.424" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/test-classes:/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/classes:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/rodionglezerov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/rodionglezerov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/rodionglezerov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/rodionglezerov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/rodionglezerov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/rodionglezerov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/rodionglezerov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/rodionglezerov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/rodionglezerov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/rodionglezerov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/rodionglezerov/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/rodionglezerov/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/rodionglezerov/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/rodionglezerov/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rodionglezerov/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/rodionglezerov/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/rodionglezerov/.m2/repository/ch/qos/logback/logback-classic/1.4.1/logback-classic-1.4.1.jar:/Users/rodionglezerov/.m2/repository/ch/qos/logback/logback-core/1.4.1/logback-core-1.4.1.jar:/Users/rodionglezerov/.m2/repository/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/Users/rodionglezerov/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/Users/rodionglezerov/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="application.properties" value="/application.properties"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/surefire/surefirebooter5741998784072067686.jar /Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/surefire 2022-11-07T12-25-13_850-jvmRun1 surefire11931550902862026622tmp surefire_06351502902026952676tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/test-classes:/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/classes:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/rodionglezerov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/rodionglezerov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/rodionglezerov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/rodionglezerov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/rodionglezerov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/rodionglezerov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/rodionglezerov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/rodionglezerov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/rodionglezerov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/rodionglezerov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/rodionglezerov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/rodionglezerov/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/rodionglezerov/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/rodionglezerov/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/rodionglezerov/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rodionglezerov/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/rodionglezerov/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/rodionglezerov/.m2/repository/ch/qos/logback/logback-classic/1.4.1/logback-classic-1.4.1.jar:/Users/rodionglezerov/.m2/repository/ch/qos/logback/logback-core/1.4.1/logback-core-1.4.1.jar:/Users/rodionglezerov/.m2/repository/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/Users/rodionglezerov/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/Users/rodionglezerov/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/rodionglezerov"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject/target/surefire/surefirebooter5741998784072067686.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.2.1+1-1"/>
+    <property name="user.name" value="rodionglezerov"/>
+    <property name="surefireXmlFile" value="src/test/resources/testngUser.xml"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.3.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/rodionglezerov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sh/x626j8tn0532j1tddjt738dm0000gn/T/"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="user.dir" value="/Users/rodionglezerov/IdeaProjects/QA32_POM_MavenProject"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/rodionglezerov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2.1+1-1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="loginPositiveParametersTestNgTest" classname="com.telran.tests.bookStore.LoginPageTests" time="1.585"/>
+</testsuite>

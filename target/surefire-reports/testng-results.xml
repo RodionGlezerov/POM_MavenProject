@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-07T12:25:14 IST" name="User" finished-at="2022-11-07T12:25:25 IST" duration-ms="10809">
+    <groups>
+    </groups>
+    <test started-at="2022-11-07T12:25:14 IST" name="UserTest" finished-at="2022-11-07T12:25:25 IST" duration-ms="10809">
+      <class name="com.telran.tests.bookStore.LoginPageTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:14 IST" name="init" finished-at="2022-11-07T12:25:20 IST" duration-ms="5678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:20 IST" name="startTest" finished-at="2022-11-07T12:25:20 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.bookStore.LoginPageTests.loginPositiveParametersTestNgTest(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6b5f8707]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:20 IST" name="ensurePrecondition" finished-at="2022-11-07T12:25:23 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method signature="loginPositiveParametersTestNgTest(java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:23 IST" name="loginPositiveParametersTestNgTest" finished-at="2022-11-07T12:25:25 IST" duration-ms="1582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[!Tom1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPositiveParametersTestNgTest -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:25 IST" name="stopTest" finished-at="2022-11-07T12:25:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPositiveParametersTestNgTest status=SUCCESS method=LoginPageTests.loginPositiveParametersTestNgTest(java.lang.String, java.lang.String)[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.telran.tests.bookStore.LoginPageTests@45ca843]" started-at="2022-11-07T12:25:25 IST" name="tearDown" finished-at="2022-11-07T12:25:25 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.telran.tests.bookStore.LoginPageTests -->
+    </test> <!-- UserTest -->
+  </suite> <!-- User -->
+</testng-results>
